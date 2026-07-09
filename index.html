@@ -9,49 +9,57 @@
 body{
 margin:0;
 font-family:Arial,sans-serif;
-background:#111827;
+background:#0f172a;
 color:white;
 text-align:center;
 }
+
 header{
 background:#2563eb;
 padding:20px;
 font-size:28px;
 font-weight:bold;
 }
+
 input{
 width:80%;
 padding:15px;
+margin-top:20px;
 font-size:18px;
-border-radius:10px;
 border:none;
-margin-top:30px;
+border-radius:10px;
 }
+
 button{
-padding:15px 30px;
 margin:20px;
+padding:15px 30px;
 font-size:18px;
 background:#22c55e;
 color:white;
 border:none;
 border-radius:10px;
-cursor:pointer;
 }
+
 .card{
-background:#1f2937;
-margin:15px auto;
+background:#1e293b;
+width:85%;
+margin:20px auto;
 padding:20px;
-width:80%;
-border-radius:12px;
+border-radius:15px;
 }
-a{
-color:white;
-text-decoration:none;
-font-size:20px;
-display:block;
-padding:10px;
+
+img{
+width:150px;
+border-radius:10px;
+}
+
+.price{
+font-size:24px;
+color:#22c55e;
+font-weight:bold;
 }
 </style>
+
 </head>
 
 <body>
@@ -60,30 +68,37 @@ padding:10px;
 
 <h2>भारत में सबसे सस्ता प्रोडक्ट खोजें</h2>
 
-<input id="product" placeholder="Product Name">
+<input placeholder="Product Name">
 <br>
+<button>Search</button>
 
-<button onclick="searchProduct()">Search</button>
+<div class="card">
+<img src="https://via.placeholder.com/150">
+<h2>Sample Product</h2>
+<p class="price">₹999</p>
+<p>Amazon</p>
+</div>
 
-<div id="results"></div>
+<div class="card">
+<img src="https://via.placeholder.com/150">
+<h2>Sample Product</h2>
+<p class="price">₹949</p>
+<p>Flipkart</p>
+</div>
 
-<script>
-function searchProduct(){
-let p=document.getElementById("product").value.trim();
+<div class="card">
+<img src="https://via.placeholder.com/150">
+<h2>Sample Product</h2>
+<p class="price">₹979</p>
+<p>Meesho</p>
+</div>
 
-if(p==""){
-alert("पहले Product Name लिखें");
-return;
-}
-
-document.getElementById("results").innerHTML=`
-<div class="card"><a href="https://www.amazon.in/s?k=${encodeURIComponent(p)}" target="_blank">🛍 Amazon पर देखें</a></div>
-<div class="card"><a href="https://www.flipkart.com/search?q=${encodeURIComponent(p)}" target="_blank">🛒 Flipkart पर देखें</a></div>
-<div class="card"><a href="https://www.meesho.com/search?q=${encodeURIComponent(p)}" target="_blank">🟣 Meesho पर देखें</a></div>
-<div class="card"><a href="https://www.myntra.com/${encodeURIComponent(p)}" target="_blank">👕 Myntra पर देखें</a></div>
-`;
-}
-</script>
+<div class="card">
+<img src="https://via.placeholder.com/150">
+<h2>Sample Product</h2>
+<p class="price">₹1019</p>
+<p>Myntra</p>
+</div>
 
 </body>
 </html>
