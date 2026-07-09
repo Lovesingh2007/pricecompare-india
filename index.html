@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+hi<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -89,3 +89,69 @@ background:#16a34a;
 <button onclick="searchProduct()">Search</button>
 </div>
 </section>
+<section style="padding:20px;">
+
+<div id="result"
+style="display:none;background:#1e293b;padding:20px;border-radius:15px;margin:auto;max-width:500px;">
+
+<h2 id="title"></h2>
+
+<p style="margin-top:15px;">
+🛒 Amazon:
+<a id="amazon" href="#" target="_blank" style="color:#38bdf8;">
+Open Product
+</a>
+</p>
+
+<p>
+🛍 Flipkart:
+<a id="flipkart" href="#" target="_blank" style="color:#38bdf8;">
+Open Product
+</a>
+</p>
+
+<p>
+🛒 Meesho:
+<a id="meesho" href="#" target="_blank" style="color:#38bdf8;">
+Open Product
+</a>
+</p>
+
+</div>
+
+</section>
+
+<footer style="text-align:center;padding:30px;color:#94a3b8;">
+© 2026 Price Compare India
+</footer>
+
+<script>
+
+function searchProduct(){
+
+let p=document.getElementById("product").value;
+
+if(p==""){
+alert("Please enter product name");
+return;
+}
+
+document.getElementById("result").style.display="block";
+
+document.getElementById("title").innerHTML=p;
+
+document.getElementById("amazon").href=
+"https://www.amazon.in/s?k="+encodeURIComponent(p);
+
+document.getElementById("flipkart").href=
+"https://www.flipkart.com/search?q="+encodeURIComponent(p);
+
+document.getElementById("meesho").href=
+"https://www.meesho.com/search?q="+encodeURIComponent(p);
+
+}
+
+</script>
+
+</body>
+</html>
