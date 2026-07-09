@@ -1,17 +1,28 @@
-<section class="brands">
-  <h2>🔥 Top Shopping Stores</h2>
+.brands{
+    padding:40px 20px;
+    text-align:center;
+}
 
-  <div class="brand-grid">
-    <a href="https://www.amazon.in" target="_blank" class="brand-card">🛒 Amazon</a>
+.brand-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:15px;
+    max-width:900px;
+    margin:auto;
+}
 
-    <a href="https://www.flipkart.com" target="_blank" class="brand-card">🛍️ Flipkart</a>
+.brand-card{
+    background:#1e293b;
+    color:white;
+    text-decoration:none;
+    padding:20px;
+    border-radius:15px;
+    font-size:20px;
+    font-weight:bold;
+    transition:.3s;
+}
 
-    <a href="https://www.meesho.com" target="_blank" class="brand-card">💜 Meesho</a>
-
-    <a href="https://www.myntra.com" target="_blank" class="brand-card">👕 Myntra</a>
-
-    <a href="https://www.ajio.com" target="_blank" class="brand-card">👟 AJIO</a>
-
-    <a href="https://www.croma.com" target="_blank" class="brand-card">💻 Croma</a>
-  </div>
-</section>
+.brand-card:hover{
+    background:#2563eb;
+    transform:scale(1.05);
+}
