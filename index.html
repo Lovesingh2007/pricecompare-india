@@ -154,6 +154,36 @@ a{
 .menu a:hover{
     color:#ffd700;
   }
+  .hero{
+    background:linear-gradient(135deg,#2874f0,#0d47a1);
+    color:white;
+    padding:60px 20px;
+    border-radius:20px;
+    text-align:center;
+    margin:20px 0;
+}
+
+.hero h1{
+    font-size:36px;
+    margin-bottom:10px;
+}
+
+.hero p{
+    font-size:18px;
+    opacity:0.9;
+}
+
+.hero button{
+    margin-top:20px;
+    background:#ff9f00;
+    color:#000;
+    border:none;
+    padding:15px 35px;
+    font-size:18px;
+    border-radius:10px;
+    font-weight:bold;
+    cursor:pointer;
+}
 </style>
 </head>
 <body>
@@ -169,6 +199,15 @@ a{
   </div>
 </nav>
 <header>
+  <section class="hero">
+  <div class="hero-content">
+    <h1>🔥 Compare Prices Across India's Top Stores</h1>
+    <p>Amazon • Flipkart • Meesho • Myntra</p>
+    <button onclick="document.getElementById('product').focus()">
+      Search Now
+    </button>
+  </div>
+  </section>
   <section class="hero-banner">
   <h1>🛍️ Compare Prices Instantly</h1>
   <p>Search once and compare prices from Amazon, Flipkart, Meesho and more.</p>
