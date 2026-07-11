@@ -322,6 +322,26 @@ a{
     transform:translateY(-5px);
     transition:.3s;
 }
+  .bottom-nav{
+    position:fixed;
+    bottom:0;
+    left:0;
+    width:100%;
+    background:#ffffff;
+    display:flex;
+    justify-content:space-around;
+    padding:10px 0;
+    box-shadow:0 -3px 15px rgba(0,0,0,.15);
+    z-index:999;
+}
+
+.bottom-nav a{
+    text-decoration:none;
+    color:#2874f0;
+    font-size:15px;
+    text-align:center;
+    font-weight:bold;
+}
 </style>
 </head>
 <body>
@@ -491,6 +511,11 @@ document.getElementById("meesho").href=
 }
 
 </script>
-
+<nav class="bottom-nav">
+  <a href="#">🏠<br>Home</a>
+  <a href="#">🔥<br>Deals</a>
+  <a href="#">❤️<br>Wishlist</a>
+  <a href="#">👤<br>Profile</a>
+</nav>
 </body>
 </html>
