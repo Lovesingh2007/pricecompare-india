@@ -231,6 +231,31 @@ a{
     color:white;
 }
   .featured-products{
+    <section class="trending">
+  <h2>🔥 Trending Deals</h2>
+
+  <div class="deal-grid">
+
+    <div class="deal-card">
+      <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400">
+      <h3>Nike Shoes</h3>
+      <p>From ₹2,499</p>
+    </div>
+
+    <div class="deal-card">
+      <img src="https://images.unsplash.com/photo-1517336714739-489689fd1ca8?w=400">
+      <h3>MacBook</h3>
+      <p>From ₹89,999</p>
+    </div>
+
+    <div class="deal-card">
+      <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400">
+      <h3>Headphones</h3>
+      <p>From ₹1,999</p>
+    </div>
+
+  </div>
+</section>
     margin:40px 0;
 }
 
@@ -269,6 +294,33 @@ a{
     border-radius:10px;
     font-size:18px;
     cursor:pointer;
+}
+  .trending{
+    margin:40px 0;
+}
+
+.deal-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.deal-card{
+    background:white;
+    border-radius:15px;
+    padding:15px;
+    text-align:center;
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+}
+
+.deal-card img{
+    width:100%;
+    border-radius:12px;
+}
+
+.deal-card:hover{
+    transform:translateY(-5px);
+    transition:.3s;
 }
 </style>
 </head>
