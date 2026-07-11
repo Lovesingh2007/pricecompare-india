@@ -1,4 +1,4 @@
-hi<!DOCTYPE html>
+tuhi<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -184,6 +184,52 @@ a{
     font-weight:bold;
     cursor:pointer;
 }
+  .categories{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:15px;
+    margin:25px 0;
+}
+
+.cat{
+    background:white;
+    border-radius:15px;
+    padding:20px;
+    text-align:center;
+    font-size:22px;
+    font-weight:bold;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+    transition:.3s;
+}
+
+.cat:hover{
+    transform:translateY(-5px);
+    background:#2874f0;
+    color:white;
+}
+  .categories{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:15px;
+    margin:25px 0;
+}
+
+.cat{
+    background:white;
+    border-radius:15px;
+    padding:20px;
+    text-align:center;
+    font-size:22px;
+    font-weight:bold;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+    transition:.3s;
+}
+
+.cat:hover{
+    transform:translateY(-5px);
+    background:#2874f0;
+    color:white;
+}
 </style>
 </head>
 <body>
@@ -241,6 +287,21 @@ a{
 
 </div>
 <section class="hero">
+  <section class="categories">
+
+<div class="cat">📱<br>Mobiles</div>
+
+<div class="cat">💻<br>Laptops</div>
+
+<div class="cat">👕<br>Fashion</div>
+
+<div class="cat">📺<br>Electronics</div>
+
+<div class="cat">⌚<br>Watches</div>
+
+<div class="cat">🏠<br>Home</div>
+
+  </section>
 <h1>Find the Best Price</h1>
 <p>Compare prices from Amazon, Flipkart, Meesho and more.</p>
 
