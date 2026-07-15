@@ -59,4 +59,19 @@ header{
   padding:10px 20px;
   border-radius:8px;
   text-decoration:none;
+.footer{
+  background:#111827;
+  text-align:center;
+  padding:30px 20px;
+  margin-top:50px;
+}
+
+.footer-links{
+  margin:15px 0;
+}
+
+.footer-links a{
+  color:white;
+  text-decoration:none;
+  margin:0 10px;
 }
