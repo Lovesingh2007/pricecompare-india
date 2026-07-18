@@ -6,6 +6,57 @@ tuhi<!DOCTYPE html>
 <title>Price Compare India</title>
 
 <style>
+ /* Premium Navbar */
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#ffffff;
+    padding:15px 25px;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 2px 10px rgba(0,0,0,.15);
+}
+
+.logo{
+    font-size:24px;
+    font-weight:bold;
+    color:#2874f0;
+}
+
+.nav-search{
+    display:flex;
+    width:40%;
+}
+
+.nav-search input{
+    flex:1;
+    padding:12px;
+    border:2px solid #2874f0;
+    border-radius:8px 0 0 8px;
+    outline:none;
+}
+
+.nav-search button{
+    background:#2874f0;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:0 8px 8px 0;
+    cursor:pointer;
+}
+
+.nav-links a{
+    margin-left:20px;
+    text-decoration:none;
+    color:#333;
+    font-weight:600;
+}
+
+.nav-links a:hover{
+    color:#2874f0;
+}
  .hero-banner{ 
     background:linear-gradient(135deg,#2563eb,#1d4ed8);
     color:white;
@@ -394,6 +445,22 @@ a{
 </style>
 </head>
 <body>
+ <nav class="navbar">
+  <div class="logo">🛒 PriceCompare India</div>
+
+  <div class="nav-search">
+    <input type="text" placeholder="Search products...">
+    <button>🔍</button>
+  </div>
+
+  <div class="nav-links">
+    <a href="#">Home</a>
+    <a href="#">Deals</a>
+    <a href="#">Categories</a>
+    <a href="#">Wishlist ❤️</a>
+    <a href="#">Login</a>
+  </div>
+ </nav>
   <header class="navbar">
     <div class="logo">
         🛒 <span>Price Compare India</span>
